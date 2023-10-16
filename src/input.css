@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: montserrat;
+        background-color: #292929;
+        color: #fff;
+    }
+}
+
+@layer components {
+    .headerWrapper {
+        @apply lg:shadow-[rgba(0,0,0,0.24)_0px_3px_8px];
+    }
+    .header .logo h2 {
+        @apply font-bold
+    }
+    .header .logo span {
+        @apply text-primary
+    }
+    .header nav ul {
+        @apply lg:gap-5;
+    }
+    .header nav ul a {
+        @apply lg:text-light-gray lg:relative lg:px-[8px] lg:py-[6px];
+    }
+    .header nav ul a::after {
+        @apply lg:bottom-0 lg:content-[''] lg:block lg:h-[1px] lg:left-[50%] lg:absolute lg:bg-light lg:transition-[width_0.3s_ease_0s,_left_0.3s_ease_0s] lg:w-0;
+    }
+    .header nav ul a:hover::after{
+        @apply lg:w-[100%] lg:left-0;
+    }
+    .header nav ul a:focus::after{
+        @apply lg:w-[100%] lg:left-0;
+    }
+    .header nav ul a:hover, .header nav ul a:focus {
+        @apply text-light;
+    }
+}
