@@ -10,9 +10,11 @@ module.exports = {
       colors: {
         'dark': '#1E1B1E',
         'light': '#fff',
+        'l-light': '#cccccc',
         'gray': '#292929',
         'light-gray': '#9e9e9e',
-        'primary': '#0824FC',
+        'primary': '#F24333',
+        'light-p': '#E26C61',
       },
       fontFamily: {
         Montserrat: "sans-serif",

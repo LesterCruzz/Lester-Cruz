@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
     body {
         font-family: montserrat;
         background-color: #292929;
@@ -12,9 +15,14 @@
     }
 }
 
+.container {
+    @apply lg:max-w-[72rem] lg:mx-auto
+}
+
 @layer components {
     .headerWrapper {
-        @apply lg:shadow-[rgba(0,0,0,0.24)_0px_3px_8px];
+        @apply 
+        lg:shadow-[rgba(0,0,0,0.24)_0px_3px_8px];
     }
     .header .logo h2 {
         @apply font-bold
@@ -23,7 +31,8 @@
         @apply text-primary
     }
     .header nav ul {
-        @apply lg:gap-5;
+        @apply hidden 
+        lg:static lg:flex lg:gap-5;
     }
     .header nav ul a {
         @apply lg:text-light-gray lg:relative lg:px-[8px] lg:py-[6px];
@@ -32,7 +41,7 @@
         @apply lg:bottom-0 lg:content-[''] lg:block lg:h-[1px] lg:left-[50%] lg:absolute lg:bg-light lg:transition-[width_0.3s_ease_0s,_left_0.3s_ease_0s] lg:w-0;
     }
     .header nav ul a:hover::after{
-        @apply lg:w-[100%] lg:left-0;
+        @apply lg:w-[100%] lg:left-0 lg:bg-primary;
     }
     .header nav ul a:focus::after{
         @apply lg:w-[100%] lg:left-0;
@@ -40,4 +49,122 @@
     .header nav ul a:hover, .header nav ul a:focus {
         @apply text-light;
     }
+    .header nav ul a:focus::after {
+        @apply lg:bg-primary;
+    }
+    .sideHeader {
+        @apply left-[-5rem] fixed w-fit bottom-0 mb-10 transition-[1s_ease]
+    }
+    .sideHeader.open {
+        @apply w-fit fixed ml-6 mb-10 left-0;
+    }
+    .sideHeader ul {
+        @apply gap-2 flex flex-col items-center bg-dark px-3 py-6 rounded-2xl
+    }
+    .sideHeader ul i {
+        @apply text-light
+    }
+    .sideHeader .circle {
+        @apply flex items-center justify-center w-12 h-12;
+    }
+    .sideHeader a:focus {
+        @apply flex items-center justify-center rounded-[50%] w-12 h-12 bg-primary;
+    }
+    .sideHeader a:hover {
+        @apply flex items-center justify-center rounded-[50%] w-12 h-12 bg-primary;
+    }
+    
+    /* Banner Section */
+
+    .banner {
+        @apply py-6
+    }
+    .bannerWrapper {
+        @apply lg:grid lg:grid-cols-[_1fr_2fr] ;
+    }
+    .bannerImg {
+        @apply w-full mx-auto;
+    }
+    .bannerImg img {
+        @apply shadow-[rgba(0,0,0,0.24)_0px_3px_8px];
+    }
+    .bannerText {
+        @apply bg-dark p-6 h-fit rounded-[1.5rem] w-full text-center lg:text-start shadow-[rgba(0,0,0,0.24)_0px_3px_8px];
+    }
+    .textWrapper {
+        @apply flex items-center flex flex-col text-center;
+    }
+    .textWrapper .staticText {
+        @apply text-[2rem];
+    }
+    .textWrapper .dynamicText {
+        @apply leading-[90px] h-[90px] overflow-hidden
+    }
+    .dynamicText li {
+        @apply text-center relative top-0 animate-[slide_32s_steps(4)_infinite] text-[2rem] text-primary ml-[15px] flex items-center 
+    }
+    @keyframes slide {
+        100% {
+            top: -360px;
+        }
+    }
+    .dynamicText li span {
+        @apply relative;
+    }
+    .dynamicText li span::after {
+        @apply bg-dark bottom-[1.5rem] left-0 animate-[typing_8s_steps(23)_infinite] content-[''] absolute h-[2.5rem] w-full border-l-[3px] border-solid;
+    }
+    @keyframes typing {
+        40%, 60%{
+          left: calc(100% + 30px);
+        }
+        100%{
+          left: 0;
+        }
+      }
+
+      /* Services Section */
+      
+      .servicesWrapper h2 {
+        @apply py-4 relative w-fit
+      }
+      .servicesWrapper h2:before {
+        @apply content-[''] absolute bottom-0 h-[.3rem] w-[35%] bg-primary
+      }
+      .cardsContainer {
+        @apply scale-90 transition-[.7s_ease];
+      }
+      .cardsContainer:hover {
+        @apply scale-100;
+      }
+      .cardsWrapper .card {
+        @apply shadow-[rgba(0,0,0,0.24)_0px_3px_8px];
+      }
+
+      /* Featured Projects */
+
+      .featured {
+        @apply py-6;
+      }
+      .featuredWrapper h2 {
+        @apply py-4 relative w-fit
+      }
+      .featuredWrapper h2:before {
+        @apply content-[''] absolute bottom-0 h-[.3rem] w-[35%] bg-primary
+      }
+      
+
+}
+
+@layer utilities {
+    .btn {
+        @apply py-4 px-6 block w-fit h-fit duration-150
+    }
+    .bg--primary {
+        @apply bg-primary rounded-xl
+    }
+    .bg--light {
+        @apply bg-light rounded-xl text-primary 
+    }
+    
 }
