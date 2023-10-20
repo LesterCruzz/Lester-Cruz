@@ -14,8 +14,8 @@
 
     <div class="sideHeader">
         <ul>
-          <li><a href="#header"><div class="circle"><i class="fa-solid fa-house"></i></div></a></li>
-          <li><a href="#services" class="active"><div class="circle"><i class="fa-solid fa-handshake"></i></div></a></li>
+          <li><a href="#header" class="active"><div class="circle"><i class="fa-solid fa-house"></i></div></a></li>
+          <li><a href="#services"><div class="circle"><i class="fa-solid fa-handshake"></i></div></a></li>
           <li><a href="#projects"><div class="circle"><i class="fa-solid fa-folder-open"></i></div></a></li>
           <li><a href="#about"><div class="circle"><i class="fa-solid fa-user-tie"></i></div></a></li>
           <li><a href="#contact"><div class="circle"><i class="fa-solid fa-message"></i></div></a></li>
@@ -35,9 +35,7 @@
                 </div>
                 <nav>
                     <ul class="lg:flex">
-                        <li><a href="javascript:void(0)">Home</a></li>
-                        <li><a href="javascript:void(0)">About</a></li>
-                        <li><a href="">Services</a></li>
+                        <li><a href="javascript:void(0)" >Home</a></li>
                         <li><a href="">Portfolio</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -148,34 +146,97 @@
                             <a href="https://lestercruzz.github.io/portfolio/" class="btn bg--light [&]:hover:bg-primary  [&]:hover:text-light">View Site</a>
                             </div>
                         </div>
-                    
                     </div>
 
                     <div class="projectActions">
-                        <h3>Recents</h3>
-                        <div class="slideContainer">
-                            <div class="slideContent">
-                                <div class="cardWrapper">
-                                    <div class="carD">
-                                    <div class="imageContent">
-                                        <span class="overlay">
-
-                                            <div class="cardImage">
-                                                <img src="../images/Images/web design.png" alt="" class="cardImg">
-                                            </div>
-                                        </span>
-                                    </div>
-                                    <div class="cardContent">
-                                        <h3 class="title">Discord Clone</h3>
-                                        <p class="description">Lorem ipsum dolor sit amet.</p>
-                                        <a href="">View Code</a>
-                                    </div>
-                                    </div>
+                        <h3 class="mb-6">Recent Work</h3>
+                            <div class="projectContainer mb-4 flex gap-6 items-center bg-dark p-4 rounded-2xl">
+                                <div class="projectImg w-[10rem]">
+                                    <img class="rounded-xl" src="../images/Images/polo.png" alt="">
+                                </div>
+                                <div class="projectText">
+                                    <h4 class="mb-4 text-xl font-bold text-primary">SSG Merch Lay-out</h4>
+                                    <a href="" class="duration-200">Read More</a>
                                 </div>
                             </div>
-                        </div>
+                            <div class="projectContainer mb-4 flex gap-6 items-center bg-dark p-4 rounded-2xl">
+                                <div class="projectImg w-[10rem]">
+                                    <img class="rounded-xl h-[8rem] w-[10rem] object-cover" src="../images/Images/discord.png" alt="">
+                                </div>
+                                <div class="projectText">
+                                    <h4 class="mb-4 text-xl font-bold text-primary">Discord Clone</h4>
+                                    <a href="" class="duration-200">Read More</a>
+                                </div>
+                            </div>
+                            <div class="projectContainer flex gap-6 items-center bg-dark p-4 rounded-2xl">
+                                <div class="projectImg w-[10rem]">
+                                    <img class="rounded-xl h-[8rem] w-[10rem] object-cover" src="../images/Images/Frame 72G1.png" alt="">
+                                </div>
+                                <div class="projectText">
+                                    <h4 class="mb-4 text-xl font-bold text-primary">Cheyan's Logo Design</h4>
+                                    <a href="" class="duration-200">Read More</a>
+                                </div>
+                            </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Me Section -->
+
+    <section class="about py-8" id="about">
+        <div class="container">
+            <div class="aboutWrapper">
+                <h2 class="text-4xl font-bold mb-6">About Me</h2>
+                <div class="aboutContent lg:grid lg:grid-cols-[3fr_2fr] lg:gap-6">
+                    <div class="aboutLeft bg-dark p-6 h-fit rounded-3xl">
+                        <div class="aboutText mb-8">
+                            <h3 class="text-2xl font-bold mb-4">Hi, I'm <span>Mark Lester Cruz</span></h3>
+                            <p class="text-justify">A creative worker with a variety of skills and a passion for <span>Web Design</span> and <span>Web Development</span>. I have a broad skill set that includes graphic design, UI/UX design, and front-end web development, and I bring a special combination of technical skills and creativity to every project I work on.</p>
+                        </div>
+                        <ul class="flex gap-8 justify-end">
+                            <li><a href="https://www.facebook.com/lester.cruz.14661"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/cruz-mark-lester-t-b397ba285/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.behance.net/CruzMarkLester"><i class="fa-brands fa-square-behance"></i></a></li>
+                            <li><a href="https://github.com/LesterCruzz"><i class="fa-brands fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="aboutImg">
+                        <img class="rounded-2xl" src="../images/About me Img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contactWrapper">
+                <h2 class="text-4xl font-bold mb-6">Contact</h2>
+                <div class="contactContent lg:grid lg:grid-cols-2">
+                    <div class="contactText">
+                    <h3 class="text-xl font-bold">Let's work together on your next project</h3>
+                    <p>Feel free to talk to me. I will love to hear from you!</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i>
+                            <p>Mark Lester Cruz</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-map-pin"></i>
+                            <p>San Pablo City, Laguna</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>marklesterc701@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactInput">
+
+                </div>
                 </div>
             </div>
         </div>

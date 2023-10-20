@@ -16,7 +16,7 @@
 }
 
 ::-webkit-scrollbar {
-    @apply w-[10px];
+    @apply w-[6px];
 }
 ::-webkit-scrollbar-track {
     @apply bg-[#313131];
@@ -165,27 +165,44 @@
       .projectActions h3 {
         @apply text-3xl
       }
-      .imageContent,
-      .cardContent {
-        @apply p-[10px_14px] flex flex-col items-center
+      .projectText a:hover {
+        @apply relative py-[6px]; 
       }
-      .cardImage {
-        @apply relative h-[150px] w-[150px] bg-dark;
+      .projectText a::after {
+        @apply bottom-0 content-[''] block h-[1px] left-[50%] absolute bg-light transition-[width_0.3s_ease_0s,_left_0.3s_ease_0s] w-0;
       }
-      .title {
-        @apply text-[18px] font-bold text-primary
+      .projectText a:hover::after {
+        @apply w-[100%] lg:left-0 bg-primary;
       }
-      .description {
-        @apply text-[14px] text-center
+
+      /* About Me Section */
+
+      .aboutWrapper h2 {
+        @apply py-4 relative w-fit
       }
-      .cardImage .cardImg {
-        @apply h-[100%] w-full object-cover
+      .aboutWrapper h2:before {
+        @apply content-[''] absolute bottom-0 h-[.3rem] w-[35%] bg-primary
       }
-      .slideContent {
-        @apply m-[0_40px] 
+      .aboutText span {
+        @apply text-primary
       }
-      .carD {
-        @apply rounded-[25px] bg-dark w-[320px]
+      .aboutLeft ul i {
+        @apply duration-200 text-2xl h-10 w-10 text-center leading-[40px] rounded-[50%];
+      }
+      .aboutLeft ul i:hover {
+        @apply bg-primary h-10 w-10 text-center leading-[40px] rounded-[50%]
+      } 
+
+      /* Contact Section */
+
+      .contactWrapper h2 {
+        @apply py-4 relative w-fit
+      }
+      .contactWrapper h2:before {
+        @apply content-[''] absolute bottom-0 h-[.3rem] w-[35%] bg-primary
+      }
+      .contactText ul li {
+        @apply flex items-center
       }
 }
 

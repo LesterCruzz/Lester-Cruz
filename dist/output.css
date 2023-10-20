@@ -917,50 +917,111 @@ body {
   line-height: 2.25rem;
 }
 
-.imageContent,
-      .cardContent{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 14px;
-}
-
-.cardImage{
+.projectText a:hover{
   position: relative;
-  height: 150px;
-  width: 150px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 27 30 / var(--tw-bg-opacity));
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
-.title{
-  font-size: 18px;
-  font-weight: 700;
+.projectText a::after{
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  display: block;
+  height: 1px;
+  width: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  transition-property: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.projectText a:hover::after{
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 67 51 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px){
+  .projectText a:hover::after{
+    left: 0px;
+  }
+}
+
+/* About Me Section */
+
+.aboutWrapper h2{
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.aboutWrapper h2:before{
+  position: absolute;
+  bottom: 0px;
+  height: .3rem;
+  width: 35%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 67 51 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.aboutText span{
   --tw-text-opacity: 1;
   color: rgb(242 67 51 / var(--tw-text-opacity));
 }
 
-.description{
+.aboutLeft ul i{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  line-height: 40px;
+  transition-duration: 200ms;
 }
 
-.cardImage .cardImg{
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slideContent{
-  margin: 0 40px;
-}
-
-.carD{
-  width: 320px;
-  border-radius: 25px;
+.aboutLeft ul i:hover{
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
   --tw-bg-opacity: 1;
-  background-color: rgb(30 27 30 / var(--tw-bg-opacity));
+  background-color: rgb(242 67 51 / var(--tw-bg-opacity));
+  text-align: center;
+  line-height: 40px;
+}
+
+/* Contact Section */
+
+.contactWrapper h2{
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.contactWrapper h2:before{
+  position: absolute;
+  bottom: 0px;
+  height: .3rem;
+  width: 35%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 67 51 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.contactText ul li{
+  display: flex;
+  align-items: center;
 }
 
 .my-6{
@@ -996,12 +1057,25 @@ body {
   display: flex;
 }
 
+.h-\[8rem\]{
+  height: 8rem;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .w-10{
   width: 2.5rem;
 }
 
 .w-9{
   width: 2.25rem;
+}
+
+.w-\[10rem\]{
+  width: 10rem;
 }
 
 .w-\[3\.3rem\]{
@@ -1024,6 +1098,10 @@ body {
   align-items: center;
 }
 
+.justify-end{
+  justify-content: flex-end;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -1038,6 +1116,10 @@ body {
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .rounded-2xl{
@@ -1096,6 +1178,11 @@ body {
   background-color: rgb(242 67 51 / var(--tw-bg-opacity));
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -1112,6 +1199,11 @@ body {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-2{
@@ -1162,6 +1254,11 @@ body {
   line-height: 1.75rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1178,6 +1275,10 @@ body {
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(242 67 51 / var(--tw-text-opacity));
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .btn{
@@ -1202,7 +1303,7 @@ body {
 }
 
 ::-webkit-scrollbar{
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track{
@@ -1241,6 +1342,10 @@ body {
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3{
