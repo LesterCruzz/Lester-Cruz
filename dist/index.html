@@ -15,10 +15,10 @@
     <div class="sideHeader">
         <ul>
           <li><a href="#header"><div class="circle"><i class="fa-solid fa-house"></i></div></a></li>
-          <li><a href="javascript:void(0)"><div class="circle"><i class="fa-solid fa-user-tie"></i></div></a></li>
-          <li><a href="javascript:void(0)"><div class="circle"><i class="fa-solid fa-handshake"></i></div></a></li>
-          <li><a href=""><div class="circle"><i class="fa-solid fa-folder-open"></i></div></a></li>
-          <li><a href=""><div class="circle"><i class="fa-solid fa-message"></i></div></a></li>
+          <li><a href="#services" class="active"><div class="circle"><i class="fa-solid fa-handshake"></i></div></a></li>
+          <li><a href="#projects"><div class="circle"><i class="fa-solid fa-folder-open"></i></div></a></li>
+          <li><a href="#about"><div class="circle"><i class="fa-solid fa-user-tie"></i></div></a></li>
+          <li><a href="#contact"><div class="circle"><i class="fa-solid fa-message"></i></div></a></li>
         </ul>      
     </div>
     
@@ -89,7 +89,7 @@
 
     <!-- Services Section -->
 
-    <section class="services my-6">
+    <section class="services my-6" id="services">
         <div class="container">
             <div class="servicesWrapper">
                 <h2 class="text-4xl font-bold mb-6">What I will do for you</h2>
@@ -123,14 +123,15 @@
 
     <!-- Featured Projects -->
 
-    <section class="featured">
+    <section class="featured" id="projects">
         <div class="container">
             <div class="featuredWrapper">
                 <h2 class="text-4xl font-bold mb-6">Featured Projects</h2>
-                <div class="featuredCards lg:grid lg:grid-cols-[2fr_1fr]">
-                    <div class="cardsMain">
-                        <div class="main mt-4">
-                            <img class="rounded-[1.5rem] mb-3" src="../images/lestercruz/Cruzz Portfolio.png" alt="">
+                <div class="featuredCards lg:gap-6 lg:grid lg:grid-cols-[3fr_2fr]">
+                    <div class="cardsMain bg-dark p-6 pb-2 rounded-3xl">
+                        
+                        <div class="main">
+                            <img class="rounded-[1.3rem] mb-3" src="../images/lestercruz/Cruzz Portfolio.png" alt="">
                             <h3 class="text-[2rem] font-bold mb-2 text-primary">Website Portfolio</h3>
                             <p class="text-justify mb-4">Designed and developed a personal portfolio website to demonstrate proficiency in
                             front-end web development and graphic design. The website serves as a showcase for
@@ -146,9 +147,35 @@
                             </ul>
                             <a href="https://lestercruzz.github.io/portfolio/" class="btn bg--light [&]:hover:bg-primary  [&]:hover:text-light">View Site</a>
                             </div>
-                            
+                        </div>
+                    
+                    </div>
+
+                    <div class="projectActions">
+                        <h3>Recents</h3>
+                        <div class="slideContainer">
+                            <div class="slideContent">
+                                <div class="cardWrapper">
+                                    <div class="carD">
+                                    <div class="imageContent">
+                                        <span class="overlay">
+
+                                            <div class="cardImage">
+                                                <img src="../images/Images/web design.png" alt="" class="cardImg">
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h3 class="title">Discord Clone</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet.</p>
+                                        <a href="">View Code</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

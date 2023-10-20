@@ -15,6 +15,16 @@
     }
 }
 
+::-webkit-scrollbar {
+    @apply w-[10px];
+}
+::-webkit-scrollbar-track {
+    @apply bg-[#313131];
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-[6px]
+}
+
 .container {
     @apply lg:max-w-[72rem] lg:mx-auto
 }
@@ -70,7 +80,7 @@
     .sideHeader a:focus {
         @apply flex items-center justify-center rounded-[50%] w-12 h-12 bg-primary;
     }
-    .sideHeader a:hover {
+    .sideHeader a:hover, .sideHeader a.active {
         @apply flex items-center justify-center rounded-[50%] w-12 h-12 bg-primary;
     }
     
@@ -152,8 +162,31 @@
       .featuredWrapper h2:before {
         @apply content-[''] absolute bottom-0 h-[.3rem] w-[35%] bg-primary
       }
-      
-
+      .projectActions h3 {
+        @apply text-3xl
+      }
+      .imageContent,
+      .cardContent {
+        @apply p-[10px_14px] flex flex-col items-center
+      }
+      .cardImage {
+        @apply relative h-[150px] w-[150px] bg-dark;
+      }
+      .title {
+        @apply text-[18px] font-bold text-primary
+      }
+      .description {
+        @apply text-[14px] text-center
+      }
+      .cardImage .cardImg {
+        @apply h-[100%] w-full object-cover
+      }
+      .slideContent {
+        @apply m-[0_40px] 
+      }
+      .carD {
+        @apply rounded-[25px] bg-dark w-[320px]
+      }
 }
 
 @layer utilities {

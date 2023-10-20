@@ -722,7 +722,7 @@ body {
   background-color: rgb(242 67 51 / var(--tw-bg-opacity));
 }
 
-.sideHeader a:hover{
+.sideHeader a:hover, .sideHeader a.active{
   display: flex;
   height: 3rem;
   width: 3rem;
@@ -912,6 +912,57 @@ body {
   content: var(--tw-content);
 }
 
+.projectActions h3{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.imageContent,
+      .cardContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+
+.cardImage{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 30 / var(--tw-bg-opacity));
+}
+
+.title{
+  font-size: 18px;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(242 67 51 / var(--tw-text-opacity));
+}
+
+.description{
+  text-align: center;
+  font-size: 14px;
+}
+
+.cardImage .cardImg{
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slideContent{
+  margin: 0 40px;
+}
+
+.carD{
+  width: 320px;
+  border-radius: 25px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 30 / var(--tw-bg-opacity));
+}
+
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -935,10 +986,6 @@ body {
 
 .mb-8{
   margin-bottom: 2rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .mt-6{
@@ -997,6 +1044,14 @@ body {
   border-radius: 1rem;
 }
 
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
+.rounded-\[1\.3rem\]{
+  border-radius: 1.3rem;
+}
+
 .rounded-\[1\.5rem\]{
   border-radius: 1.5rem;
 }
@@ -1021,6 +1076,11 @@ body {
   border-top-right-radius: 0.75rem;
 }
 
+.bg-dark{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 27 30 / var(--tw-bg-opacity));
+}
+
 .bg-light{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1040,6 +1100,10 @@ body {
   padding: 1rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1048,6 +1112,10 @@ body {
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
 }
 
 .pr-2{
@@ -1133,6 +1201,21 @@ body {
   color: rgb(242 67 51 / var(--tw-text-opacity));
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 49 49 / var(--tw-bg-opacity));
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 6px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 67 51 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1024px){
   .container{
     margin-left: auto;
@@ -1164,8 +1247,8 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-\[2fr_1fr\]{
-    grid-template-columns: 2fr 1fr;
+  .lg\:grid-cols-\[3fr_2fr\]{
+    grid-template-columns: 3fr 2fr;
   }
 
   .lg\:flex-row{
@@ -1182,6 +1265,10 @@ body {
 
   .lg\:justify-between{
     justify-content: space-between;
+  }
+
+  .lg\:gap-6{
+    gap: 1.5rem;
   }
 
   .lg\:gap-8{
