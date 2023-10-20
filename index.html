@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="../images/redlogo.png">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Lester Cruz</title>
+</head>
+<body>
+
+    <!-- Side Menu -->
+
+    <div class="sideHeader">
+        <ul>
+          <li><a href="#header"><div class="circle"><i class="fa-solid fa-house"></i></div></a></li>
+          <li><a href="#services" class="active"><div class="circle"><i class="fa-solid fa-handshake"></i></div></a></li>
+          <li><a href="#projects"><div class="circle"><i class="fa-solid fa-folder-open"></i></div></a></li>
+          <li><a href="#about"><div class="circle"><i class="fa-solid fa-user-tie"></i></div></a></li>
+          <li><a href="#contact"><div class="circle"><i class="fa-solid fa-message"></i></div></a></li>
+        </ul>      
+    </div>
+    
+    <!-- Header -->
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="headerWrapper mt-6 lg:flex lg:justify-between lg:items-center lg:bg-dark lg:py-6 lg:px-8 lg:rounded-[1.5rem]">
+                <div class="logo">
+                    <a href="" class="flex items-center gap-4">
+                        <img class="w-[3rem]" src="../images/redlogo.png" alt="">
+                        <h2 class="text-2xl">Lester <span>Cruz.</span></h2>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="lg:flex">
+                        <li><a href="javascript:void(0)">Home</a></li>
+                        <li><a href="javascript:void(0)">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+
+    <section class="banner" id="home">
+        <div class="container">
+            <div class="bannerWrapper lg:gap-8">
+                <div class="bannerImg lg:w-full mb-6">
+                    <img class="rounded-[1.5rem]" src="../images/29 CRUZ, MARK LESTER.jpg" alt="">
+                </div>
+                <div class="bannerRight">
+                <div class="bannerText lg:mb-5">
+                    <h1 class="text-[1.5rem]">Hi, my name is <br><span class="text-[3.5rem] font-semibold">Mark Lester Cruz</span></h1>
+                    <div class="textWrapper lg:flex lg:flex-row">
+                        <div class="staticText">
+                            I'm a
+                        </div>
+                            <ul class="dynamicText lg:items-start lg:static">
+                                <li><span>Graphic Designer</span></li>
+                                <li><span>UI/UX Designer</span></li>
+                                <li><span>Front-end Web Developer</span></li>
+                                <li><span>Freelancer</span></li>
+                            </ul>
+                    </div>
+                    
+                </div>
+                <div class="bannerActions">
+                    <ul class="flex items-center gap-6">
+                        <li><a href="../images/Cruz_Resume.pdf" class="flex items-center">
+                            <h3 class="p-4 pr-2 bg-primary rounded-tl-xl rounded-bl-xl [&]:hover:bg-light-p [&]:hover:duration-150">Download CV </h3> 
+                            <i class="fa-solid fa-arrow-down px-4 py-5 bg-light-p rounded-tr-xl rounded-br-xl"></i>
+                        </a></li>
+                        <li><a href="" class="flex items-center bg-light rounded-xl [&]:hover:bg-l-light [&]:hover:duration-150">
+                            <h3 class="p-4 pr-2 text-primary">See My Projects </h3> 
+                            <i class="text-primary px-4 py-5 fa-solid fa-arrow-right"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+
+    <section class="services my-6" id="services">
+        <div class="container">
+            <div class="servicesWrapper">
+                <h2 class="text-4xl font-bold mb-6">What I will do for you</h2>
+                <div class="cardsWrapper lg:grid lg:grid-cols-3 gap-5">
+                    <div class="card rounded-2xl flex flex-col items-center text-center bg-light text-primary p-4 [&]:hover:transition-[.7s_ease] [&]:hover:text-light [&]:hover:bg-primary ">
+                        <div class="cardsContainer">
+                            <i class="fa-solid fa-pen-nib text-3xl mb-3"></i>
+                            <h3 class="text-2xl font-semibold mb-3">Graphic Design</h3>
+                            <p>I'm experienced in producing designs that conveys the message of your company. Through anything from logo design to marketing materials.</p>
+                        </div>
+                    </div>
+                    <div class="card rounded-2xl flex flex-col items-center text-center bg-primary text-light p-4 [&]:hover:transition-[.7s_ease] [&]:hover:text-primary [&]:hover:bg-light ">
+                        <div class="cardsContainer">
+                            <i class="fa-solid fa-code text-3xl mb-3"></i>
+                            <h3 class="text-2xl font-semibold mb-3">Front-end Web Development</h3>
+                            <p>Transforming your ideas into dynamic and responsive websites.</p>
+                        </div>
+                    </div>
+                    <div class="card rounded-2xl flex flex-col items-center text-center bg-light text-primary p-4 [&]:hover:transition-[.7s_ease] [&]:hover:text-light [&]:hover:bg-primary ">
+                        <div class="cardsContainer">
+                            <i class="fa-solid fa-pen-ruler text-3xl mb-3"></i>
+                            <h3 class="text-2xl font-semibold mb-3">Web Design</h3>
+                            <p>Elevating your online presence with my Web Design Services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+
+    <section class="featured" id="projects">
+        <div class="container">
+            <div class="featuredWrapper">
+                <h2 class="text-4xl font-bold mb-6">Featured Projects</h2>
+                <div class="featuredCards lg:gap-6 lg:grid lg:grid-cols-[3fr_2fr]">
+                    <div class="cardsMain bg-dark p-6 pb-2 rounded-3xl">
+                        
+                        <div class="main">
+                            <img class="rounded-[1.3rem] mb-3" src="../images/lestercruz/Cruzz Portfolio.png" alt="">
+                            <h3 class="text-[2rem] font-bold mb-2 text-primary">Website Portfolio</h3>
+                            <p class="text-justify mb-4">Designed and developed a personal portfolio website to demonstrate proficiency in
+                            front-end web development and graphic design. The website serves as a showcase for
+                            various projects and skills.
+                            </p>
+                            <p class="text-lg font-semibold mb-3">Tools Used</p>
+                            <div class="mainIcons flex justify-between items-start">
+                                <ul class="flex items-center gap-4 mb-8">
+                                <li><img class="w-10" src="../images/lestercruz/html.png" alt=""></li>
+                                <li><img class="w-9" src="../images/lestercruz/css.png" alt=""></li>
+                                <li><img class="w-10" src="../images/lestercruz/sass-1-logo-png-transparent.png" alt=""></li>
+                                <li><img class="w-[3.3rem]" src="../images/lestercruz/javascript-39394.png" alt=""></li>
+                            </ul>
+                            <a href="https://lestercruzz.github.io/portfolio/" class="btn bg--light [&]:hover:bg-primary  [&]:hover:text-light">View Site</a>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="projectActions">
+                        <h3>Recents</h3>
+                        <div class="slideContainer">
+                            <div class="slideContent">
+                                <div class="cardWrapper">
+                                    <div class="carD">
+                                    <div class="imageContent">
+                                        <span class="overlay">
+
+                                            <div class="cardImage">
+                                                <img src="../images/Images/web design.png" alt="" class="cardImg">
+                                            </div>
+                                        </span>
+                                    </div>
+                                    <div class="cardContent">
+                                        <h3 class="title">Discord Clone</h3>
+                                        <p class="description">Lorem ipsum dolor sit amet.</p>
+                                        <a href="">View Code</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script src="./script.js"></script>
+</body>
+</html>
