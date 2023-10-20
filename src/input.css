@@ -202,7 +202,16 @@
         @apply content-[''] absolute bottom-0 h-[.3rem] w-[35%] bg-primary
       }
       .contactText ul li {
-        @apply flex items-center
+        @apply flex items-center gap-12 mb-6
+      }
+      .contactText ul li i {
+        @apply text-2xl text-primary
+      }
+      .contactInput input {
+        @apply mb-6 bg-dark border-light-gray border text-light p-3 rounded-xl outline-none
+      }
+      .contactInput textarea {
+        @apply bg-dark border-light-gray border mb-6 rounded-xl p-3 h-[8rem] text-[1.1rem] overflow-hidden outline-none
       }
 }
 

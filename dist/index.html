@@ -69,7 +69,7 @@
                     
                 </div>
                 <div class="bannerActions">
-                    <ul class="flex items-center gap-6">
+                    <ul class="flex flex-col lg:flex-row items-center gap-6">
                         <li><a href="../images/Cruz_Resume.pdf" class="flex items-center">
                             <h3 class="p-4 pr-2 bg-primary rounded-tl-xl rounded-bl-xl [&]:hover:bg-light-p [&]:hover:duration-150">Download CV </h3> 
                             <i class="fa-solid fa-arrow-down px-4 py-5 bg-light-p rounded-tr-xl rounded-br-xl"></i>
@@ -215,18 +215,18 @@
         <div class="container">
             <div class="contactWrapper">
                 <h2 class="text-4xl font-bold mb-6">Contact</h2>
-                <div class="contactContent lg:grid lg:grid-cols-2">
-                    <div class="contactText">
+                <div class="contactContent lg:grid lg:grid-cols-2 lg:gap-6 lg:py-6">
+                    <div class="contactText bg-dark p-6 rounded-3xl h-fit">
                     <h3 class="text-xl font-bold">Let's work together on your next project</h3>
-                    <p>Feel free to talk to me. I will love to hear from you!</p>
+                    <p class="mb-10">Feel free to talk to me. I will love to hear from you!</p>
                     <ul>
                         <li>
                             <i class="fa-solid fa-user"></i>
-                            <p>Mark Lester Cruz</p>
+                            <p class="ml-[3px]">Mark Lester Cruz</p>
                         </li>
-                        <li>
+                        <li class="ml-[4px]">
                             <i class="fa-solid fa-map-pin"></i>
-                            <p>San Pablo City, Laguna</p>
+                            <p class="ml-[4px]">San Pablo City, Laguna</p>
                         </li>
                         <li>
                             <i class="fa-solid fa-envelope"></i>
@@ -234,10 +234,30 @@
                         </li>
                     </ul>
                 </div>
-                <div class="contactInput">
+                <div class="contactInput bg-dark p-8 rounded-3xl">
+                    <form action="" class="flex flex-col">
+                        <input type="text" placeholder="Enter your name" required>
+                        <input type="email" placeholder="Enter your email" required>
+                        <input type="text" placeholder="Enter your subject (optional)">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter a message" required></textarea>
+                        <div class="contactAction w-full flex justify-end">
+                            <a href="" class="flex items-center bg-primary rounded-xl [&]:hover:bg-light [&]:hover:duration-150 [&]:hover:text-primary">
+                                <h4 class="p-4 pr-2">Send Message</h4>
+                                <i class="fa-solid fa-arrow-right px-4 py-5"></i></a>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                </div>
-                </div>
+    <!-- Footer Section -->
+
+    <section class="footer">
+        <div class="container">
+            <div class="footerWrapper">
+                
             </div>
         </div>
     </section>
