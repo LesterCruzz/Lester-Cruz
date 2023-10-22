@@ -56,6 +56,12 @@
     .header nav ul a:focus::after{
         @apply lg:w-[100%] lg:left-0;
     }
+    .header nav ul a.focus{
+      @apply text-light;
+    }
+    .header nav ul a::after.focus {
+      @apply lg:w-[100%] lg:left-0 lg:bottom-0 lg:content-[''] lg:block lg:h-[1px] lg:absolute lg:bg-primary;
+    }
     .header nav ul a:hover, .header nav ul a:focus {
         @apply text-light;
     }
@@ -213,6 +219,17 @@
       .contactInput textarea {
         @apply bg-dark border-light-gray border mb-6 rounded-xl p-3 h-[8rem] text-[1.1rem] overflow-hidden outline-none
       }
+
+      /* Footer Section */
+
+      .footer ul i {
+        @apply text-xl;
+      }
+
+      /* Porfolio Page */
+      /* Web Development Section */
+
+      
 }
 
 @layer utilities {

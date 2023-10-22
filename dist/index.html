@@ -36,7 +36,7 @@
                 <nav>
                     <ul class="lg:flex">
                         <li><a href="javascript:void(0)" >Home</a></li>
-                        <li><a href="">Portfolio</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
@@ -74,7 +74,7 @@
                             <h3 class="p-4 pr-2 bg-primary rounded-tl-xl rounded-bl-xl [&]:hover:bg-light-p [&]:hover:duration-150">Download CV </h3> 
                             <i class="fa-solid fa-arrow-down px-4 py-5 bg-light-p rounded-tr-xl rounded-br-xl"></i>
                         </a></li>
-                        <li><a href="" class="flex items-center bg-light rounded-xl [&]:hover:bg-l-light [&]:hover:duration-150">
+                        <li><a href="./portfolio.html" class="flex items-center bg-light rounded-xl [&]:hover:bg-l-light [&]:hover:duration-150">
                             <h3 class="p-4 pr-2 text-primary">See My Projects </h3> 
                             <i class="text-primary px-4 py-5 fa-solid fa-arrow-right"></i>
                         </a></li>
@@ -193,7 +193,7 @@
                     <div class="aboutLeft bg-dark p-6 h-fit rounded-3xl">
                         <div class="aboutText mb-8">
                             <h3 class="text-2xl font-bold mb-4">Hi, I'm <span>Mark Lester Cruz</span></h3>
-                            <p class="text-justify">A creative worker with a variety of skills and a passion for <span>Web Design</span> and <span>Web Development</span>. I have a broad skill set that includes graphic design, UI/UX design, and front-end web development, and I bring a special combination of technical skills and creativity to every project I work on.</p>
+                            <p class="text-justify">A creative worker with a variety of skills and a passion for <span>Web Design</span> and <span>Web Development</span>. I have a broad skill set that includes graphic design, video editing, autoCad design, UI/UX design, and front-end web development, and I bring a special combination of technical skills and creativity to every project I work on.</p>
                         </div>
                         <ul class="flex gap-8 justify-end">
                             <li><a href="https://www.facebook.com/lester.cruz.14661"><i class="fa-brands fa-facebook"></i></a></li>
@@ -211,7 +211,9 @@
         </div>
     </section>
 
-    <section class="contact">
+    <!-- Contact Section -->
+
+    <section class="contact lg:mb-8" id="contact">
         <div class="container">
             <div class="contactWrapper">
                 <h2 class="text-4xl font-bold mb-6">Contact</h2>
@@ -254,13 +256,27 @@
 
     <!-- Footer Section -->
 
-    <section class="footer">
+    <footer class="footer bg-dark py-4 border-t border-primary">
         <div class="container">
-            <div class="footerWrapper">
-                
+            <div class="footerWrapper lg:grid lg:grid-cols-3 lg:items-center text-center">
+                <div class="logo">
+                    <a href="" class="flex items-center gap-4">
+                        <img class="w-[3rem]" src="../images/redlogo.png" alt="">
+                        <h2 class="font-bold text-2xl">Lester <span class="text-primary">Cruz.</span></h2>
+                    </a>
+                </div>
+                <ul class="flex gap-6 lg:justify-center">
+                    <li><a href="https://www.facebook.com/lester.cruz.14661"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/cruz-mark-lester-t-b397ba285/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.behance.net/CruzMarkLester"><i class="fa-brands fa-square-behance"></i></a></li>
+                    <li><a href="https://github.com/LesterCruzz"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+                <div class="credits lg:flex lg:justify-end">
+                    <p>©Lester Cruz 2023</p>
+                </div>
             </div>
         </div>
-    </section>
+    </footer>
 
 <script src="./script.js"></script>
 </body>
