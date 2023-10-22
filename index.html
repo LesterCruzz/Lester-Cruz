@@ -26,7 +26,7 @@
 
     <header class="header" id="header">
         <div class="container">
-            <div class="headerWrapper mt-6 lg:flex lg:justify-between lg:items-center lg:bg-dark lg:py-6 lg:px-8 lg:rounded-[1.5rem]">
+            <div class="headerWrapper mt-6 flex items-center justify-between lg:flex lg:justify-between lg:items-center lg:bg-dark lg:py-6 lg:px-8 lg:rounded-[1.5rem]">
                 <div class="logo">
                     <a href="" class="flex items-center gap-4">
                         <img class="w-[3rem]" src="../images/redlogo.png" alt="">
@@ -35,14 +35,31 @@
                 </div>
                 <nav>
                     <ul class="lg:flex">
-                        <li><a href="" class="focus">Home</a></li>
-                        <li><a href="../portfolio.html">Portfolio</a></li>
+                        <li><a href="javascript:void(0)" >Home</a></li>
+                        <li><a href="./portfolio.html">Portfolio</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="toggleMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
             </div>
         </div>
     </header>
+
+    
+    <div class="openMenu ">
+        <div class="container">
+           <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+        </ul> 
+        </div>
+    </div>
 
     <!-- Banner -->
 
@@ -68,13 +85,13 @@
                     </div>
                     
                 </div>
-                <div class="bannerActions">
+                <div class="bannerActions mt-6">
                     <ul class="flex flex-col lg:flex-row items-center gap-6">
                         <li><a href="../images/Cruz_Resume.pdf" class="flex items-center">
                             <h3 class="p-4 pr-2 bg-primary rounded-tl-xl rounded-bl-xl [&]:hover:bg-light-p [&]:hover:duration-150">Download CV </h3> 
                             <i class="fa-solid fa-arrow-down px-4 py-5 bg-light-p rounded-tr-xl rounded-br-xl"></i>
                         </a></li>
-                        <li><a href="" class="flex items-center bg-light rounded-xl [&]:hover:bg-l-light [&]:hover:duration-150">
+                        <li><a href="./portfolio.html" class="flex items-center bg-light rounded-xl [&]:hover:bg-l-light [&]:hover:duration-150">
                             <h3 class="p-4 pr-2 text-primary">See My Projects </h3> 
                             <i class="text-primary px-4 py-5 fa-solid fa-arrow-right"></i>
                         </a></li>
@@ -91,7 +108,7 @@
         <div class="container">
             <div class="servicesWrapper">
                 <h2 class="text-4xl font-bold mb-6">What I will do for you</h2>
-                <div class="cardsWrapper lg:grid lg:grid-cols-3 gap-5">
+                <div class="cardsWrapper flex flex-wrap gap-5">
                     <div class="card rounded-2xl flex flex-col items-center text-center bg-light text-primary p-4 [&]:hover:transition-[.7s_ease] [&]:hover:text-light [&]:hover:bg-primary ">
                         <div class="cardsContainer">
                             <i class="fa-solid fa-pen-nib text-3xl mb-3"></i>
@@ -113,6 +130,20 @@
                             <p>Elevating your online presence with my Web Design Services.</p>
                         </div>
                     </div>
+                    <div class="card rounded-2xl flex flex-col items-center text-center bg-light text-primary p-4 [&]:hover:transition-[.7s_ease] [&]:hover:text-light [&]:hover:bg-primary ">
+                        <div class="cardsContainer">
+                            <i class="fa-solid fa-compass-drafting text-3xl mb-3"></i>
+                            <h3 class="text-2xl font-semibold mb-3">Autocad Design</h3>
+                            <p>Designs 2D and 3D models</p>
+                        </div>
+                    </div>
+                    <div class="card rounded-2xl flex flex-col items-center text-center bg-light text-primary p-4 [&]:hover:transition-[.7s_ease] [&]:hover:text-light [&]:hover:bg-primary ">
+                        <div class="cardsContainer">
+                            <i class="fa-solid fa-photo-film text-3xl mb-3"></i>
+                            <h3 class="text-2xl font-semibold mb-3">Video Edit</h3>
+                            <p>Unlock the potential of your video content with my video editing services</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,7 +157,7 @@
             <div class="featuredWrapper">
                 <h2 class="text-4xl font-bold mb-6">Featured Projects</h2>
                 <div class="featuredCards lg:gap-6 lg:grid lg:grid-cols-[3fr_2fr]">
-                    <div class="cardsMain bg-dark p-6 pb-2 rounded-3xl">
+                    <div class="cardsMain mb-6 bg-dark p-6 pb-2 rounded-3xl">
                         
                         <div class="main">
                             <img class="rounded-[1.3rem] mb-3" src="../images/lestercruz/Cruzz Portfolio.png" alt="">
@@ -190,10 +221,10 @@
             <div class="aboutWrapper">
                 <h2 class="text-4xl font-bold mb-6">About Me</h2>
                 <div class="aboutContent lg:grid lg:grid-cols-[3fr_2fr] lg:gap-6">
-                    <div class="aboutLeft bg-dark p-6 h-fit rounded-3xl">
+                    <div class="aboutLeft mb-6 bg-dark p-6 h-fit rounded-3xl">
                         <div class="aboutText mb-8">
                             <h3 class="text-2xl font-bold mb-4">Hi, I'm <span>Mark Lester Cruz</span></h3>
-                            <p class="text-justify">A creative worker with a variety of skills and a passion for <span>Web Design</span> and <span>Web Development</span>. I have a broad skill set that includes graphic design, UI/UX design, and front-end web development, and I bring a special combination of technical skills and creativity to every project I work on.</p>
+                            <p class="text-justify">A creative worker with a variety of skills and a passion for <span>Web Design</span> and <span>Web Development</span>. I have a broad skill set that includes graphic design, video editing, autoCad design, UI/UX design, and front-end web development, and I bring a special combination of technical skills and creativity to every project I work on.</p>
                         </div>
                         <ul class="flex gap-8 justify-end">
                             <li><a href="https://www.facebook.com/lester.cruz.14661"><i class="fa-brands fa-facebook"></i></a></li>
@@ -218,7 +249,7 @@
             <div class="contactWrapper">
                 <h2 class="text-4xl font-bold mb-6">Contact</h2>
                 <div class="contactContent lg:grid lg:grid-cols-2 lg:gap-6 lg:py-6">
-                    <div class="contactText bg-dark p-6 rounded-3xl h-fit">
+                    <div class="contactText mb-6 bg-dark p-6 rounded-3xl h-fit">
                     <h3 class="text-xl font-bold">Let's work together on your next project</h3>
                     <p class="mb-10">Feel free to talk to me. I will love to hear from you!</p>
                     <ul>
@@ -256,16 +287,16 @@
 
     <!-- Footer Section -->
 
-    <footer class="footer bg-dark py-4 border-t border-primary">
+    <footer class="footer mt-8 bg-dark py-4 border-t border-primary">
         <div class="container">
-            <div class="footerWrapper lg:grid lg:grid-cols-3 lg:items-center text-center">
+            <div class="footerWrapper flex flex-col items-center justify-center lg:grid lg:grid-cols-3 lg:items-center text-center">
                 <div class="logo">
-                    <a href="" class="flex items-center gap-4">
+                    <a href="" class="flex items-center gap-4 mb-2">
                         <img class="w-[3rem]" src="../images/redlogo.png" alt="">
                         <h2 class="font-bold text-2xl">Lester <span class="text-primary">Cruz.</span></h2>
                     </a>
                 </div>
-                <ul class="flex gap-6 lg:justify-center">
+                <ul class="flex gap-6 lg:justify-center mb-2">
                     <li><a href="https://www.facebook.com/lester.cruz.14661"><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/cruz-mark-lester-t-b397ba285/"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="https://www.behance.net/CruzMarkLester"><i class="fa-brands fa-square-behance"></i></a></li>
