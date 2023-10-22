@@ -1,5 +1,16 @@
 const sideHeader = document.querySelector(".sideHeader");
+const toggleBtn = document.querySelector(".toggleMenu");
+const openMenu = document.querySelector(".openMenu");
+const closeBtn = document.querySelector(".toggleMenu.open");
 
+toggleBtn.addEventListener("click", () => {
+    toggleBtn.classList.toggle("open");
+    openMenu.classList.toggle("open");
+});
+closeBtn.addEventListener("click", () => {
+    closeBtn.classList.remove("open");
+    openMenu.classList.remove("open");
+});
 
 window.addEventListener("scroll", () => {
     console.log(window.scrollY);
@@ -28,3 +39,10 @@ window.onscroll = () => {
         };
     });
 };
+
+var menu = document.getElementById("menu");
+
+        menu.onclick = function() {
+            menu.classList.toggle("openmenu");
+        };
+
