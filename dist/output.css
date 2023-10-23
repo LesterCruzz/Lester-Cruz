@@ -1258,6 +1258,10 @@ body {
   margin-top: 2rem;
 }
 
+.mt-\[3rem\]{
+  margin-top: 3rem;
+}
+
 .flex{
   display: flex;
 }
@@ -1477,6 +1481,10 @@ body {
 
 .pr-2{
   padding-right: 0.5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
