@@ -264,8 +264,9 @@
         @apply text-xl;
       }
 
-      /* Porfolio Page */
-      /* Web Development Section */
+     .wpImage img {
+      @apply shadow-[rgba(0,0,0,0.7)_0px_3px_8px]
+     }
 
       
 }
