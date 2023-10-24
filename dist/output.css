@@ -1315,6 +1315,11 @@ body {
   width: 100%;
 }
 
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1359,6 +1364,10 @@ body {
   gap: 2rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
 .rounded-2xl{
   border-radius: 1rem;
 }
@@ -1377,6 +1386,10 @@ body {
 
 .rounded-xl{
   border-radius: 0.75rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-bl-xl{
@@ -1446,6 +1459,10 @@ body {
   padding: 2rem;
 }
 
+.p-3{
+  padding: 0.75rem;
+}
+
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1471,6 +1488,41 @@ body {
   padding-bottom: 2rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[8rem\]{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-\[6rem\]{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pb-2{
   padding-bottom: 0.5rem;
 }
@@ -1481,10 +1533,6 @@ body {
 
 .pr-2{
   padding-right: 0.5rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -1530,6 +1578,11 @@ body {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -1653,6 +1706,34 @@ body {
     grid-template-columns: 3fr 2fr;
   }
 
+  .lg\:grid-cols-\[\]{
+    grid-template-columns: ;
+  }
+
+  .lg\:grid-cols-\[1fr\]{
+    grid-template-columns: 1fr;
+  }
+
+  .lg\:grid-cols-\[1fr_2fr\]{
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .lg\:grid-cols-\[2fr_2fr\]{
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .lg\:grid-cols-\[2fr_3fr\]{
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .lg\:grid-cols-\[3fr_3fr\]{
+    grid-template-columns: 3fr 3fr;
+  }
+
+  .lg\:grid-cols-\[3fr_4fr\]{
+    grid-template-columns: 3fr 4fr;
+  }
+
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -1685,6 +1766,14 @@ body {
     gap: 2rem;
   }
 
+  .lg\:gap-\[\]{
+    gap: ;
+  }
+
+  .lg\:gap-\[4rem\]{
+    gap: 4rem;
+  }
+
   .lg\:rounded-\[1\.5rem\]{
     border-radius: 1.5rem;
   }
@@ -1703,6 +1792,16 @@ body {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
+}
+
+.\[\&\>\]\:hover\:text-primary:hover>{
+  --tw-text-opacity: 1;
+  color: rgb(242 67 51 / var(--tw-text-opacity));
+}
+
+.\[\&\>i\]\:hover\:text-primary:hover>i{
+  --tw-text-opacity: 1;
+  color: rgb(242 67 51 / var(--tw-text-opacity));
 }
 
 .\[\&\]\:hover\:bg-l-light:hover{
