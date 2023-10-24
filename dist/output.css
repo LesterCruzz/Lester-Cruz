@@ -1322,6 +1322,22 @@ body {
   width: 100%;
 }
 
+.w-\[11\.5rem\]{
+  width: 11.5rem;
+}
+
+.w-\[10\.5rem\]{
+  width: 10.5rem;
+}
+
+.w-\[11\.3rem\]{
+  width: 11.3rem;
+}
+
+.w-\[11\.6rem\]{
+  width: 11.6rem;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1638,6 +1654,10 @@ body {
 @media (min-width: 1024px){
   .lg\:static{
     position: static;
+  }
+
+  .lg\:fixed{
+    position: fixed;
   }
 
   .lg\:mb-5{
