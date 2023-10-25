@@ -1211,6 +1211,32 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.wpText{
+  text-align: center;
+}
+
+@media (min-width: 1024px){
+  .wpText{
+    text-align: start;
+  }
+}
+
+.mainIcons{
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+}
+
+@media (min-width: 1024px){
+  .mainIcons{
+    align-items: flex-start !important;
+  }
+}
+
+.mainIcons a{
+  margin-bottom: 1.5rem;
+}
+
 .my-6{
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1297,8 +1323,8 @@ body {
   width: 10rem;
 }
 
-.w-\[11rem\]{
-  width: 11rem;
+.w-\[11\.6rem\]{
+  width: 11.6rem;
 }
 
 .w-\[3\.3rem\]{
@@ -1320,22 +1346,6 @@ body {
 
 .w-full{
   width: 100%;
-}
-
-.w-\[11\.5rem\]{
-  width: 11.5rem;
-}
-
-.w-\[10\.5rem\]{
-  width: 10.5rem;
-}
-
-.w-\[11\.3rem\]{
-  width: 11.3rem;
-}
-
-.w-\[11\.6rem\]{
-  width: 11.6rem;
 }
 
 .flex-col{
@@ -1654,10 +1664,6 @@ body {
 @media (min-width: 1024px){
   .lg\:static{
     position: static;
-  }
-
-  .lg\:fixed{
-    position: fixed;
   }
 
   .lg\:mb-5{
