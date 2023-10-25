@@ -769,6 +769,7 @@ body {
 
 .openMenu.open{
   position: absolute;
+  z-index: 50;
   margin-top: 1rem;
   height: -moz-fit-content;
   height: fit-content;
