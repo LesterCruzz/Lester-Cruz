@@ -1328,6 +1328,10 @@ body {
   width: 11.6rem;
 }
 
+.w-\[11rem\]{
+  width: 11rem;
+}
+
 .w-\[3\.3rem\]{
   width: 3.3rem;
 }
@@ -1347,6 +1351,26 @@ body {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[11\.5rem\]{
+  width: 11.5rem;
+}
+
+.w-\[11\.rem\]{
+  width: 11.rem;
+}
+
+.w-\[11\.7rem\]{
+  width: 11.7rem;
+}
+
+.w-\[1\.7rem\]{
+  width: 1.7rem;
+}
+
+.w-\[12\.7rem\]{
+  width: 12.7rem;
 }
 
 .flex-col{
