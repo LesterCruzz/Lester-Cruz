@@ -1,16 +1,10 @@
+
 const sideHeader = document.querySelector(".sideHeader");
 const toggleBtn = document.querySelector(".toggleMenu");
 const openMenu = document.querySelector(".openMenu");
 const closeBtn = document.querySelector(".toggleMenu.open");
 
-toggleBtn.addEventListener("click", () => {
-    toggleBtn.classList.toggle("open");
-    openMenu.classList.toggle("open");
-});
-closeBtn.addEventListener("click", () => {
-    closeBtn.classList.remove("open");
-    openMenu.classList.remove("open");
-});
+
 
 window.addEventListener("scroll", () => {
     console.log(window.scrollY);
@@ -20,6 +14,8 @@ window.addEventListener("scroll", () => {
         sideHeader.classList.remove("open");
     }
 });
+
+
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('.sideHeader a');
@@ -40,9 +36,17 @@ window.onscroll = () => {
     });
 };
 
+toggleBtn.addEventListener("click", () => {
+    toggleBtn.classList.toggle("open");
+    openMenu.classList.toggle("open");
+});
+closeBtn.addEventListener("click", () => {
+    closeBtn.classList.remove("open");
+    openMenu.classList.remove("open");
+});
+
 var menu = document.getElementById("menu");
 
         menu.onclick = function() {
             menu.classList.toggle("openmenu");
         };
-
